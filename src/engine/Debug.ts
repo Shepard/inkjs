@@ -9,15 +9,7 @@ export namespace Debug {
 
   export function Assert(condition: boolean, message?: string): void | never {
     if (!condition) {
-      if (typeof message !== "undefined") {
-        console.warn(message);
-      }
-
-      if (console.trace) {
-        console.trace();
-      }
-
-      throw new Error("");
+      throw new Error(message);
     }
   }
 }

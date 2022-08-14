@@ -183,6 +183,7 @@ export class Story extends InkObject {
         );
 
       let formatFromFile = parseInt(versionObj);
+      let versionWarning = null;
       if (formatFromFile > Story.inkVersionCurrent) {
         throw new Error(
           "Version of ink used to build story was newer than the current version of the engine"
@@ -192,9 +193,8 @@ export class Story extends InkObject {
           "Version of ink used to build story is too old to be loaded by this version of the engine"
         );
       } else if (formatFromFile != Story.inkVersionCurrent) {
-        console.warn(
-          "WARNING: Version of ink used to build story doesn't match current version of engine. Non-critical, but recommend synchronising."
-        );
+        versionWarning =
+          "WARNING: Version of ink used to build story doesn't match current version of engine. Non-critical, but recommend synchronising.";
       }
 
       let rootToken = rootObject["root"];
@@ -215,6 +215,10 @@ export class Story extends InkObject {
       );
 
       this.ResetState();
+
+      if (versionWarning) {
+        this.Warning(versionWarning);
+      }
     }
     // ------
   }
