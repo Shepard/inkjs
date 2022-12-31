@@ -10,5 +10,5 @@ declare interface Inkjs {
 }
 
 declare let inkjs: Inkjs
-export = inkjs
+//export = inkjs
 export default inkjs
