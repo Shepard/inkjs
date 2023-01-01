@@ -1,6 +1,6 @@
 {
   "name": "@shepard4711/inkjs",
-  "version": "2.1.0.1",
+  "version": "2.1.1",
   "description": "A javascript port of inkle's ink scripting language (http://www.inklestudios.com/ink/)",
   "main": "dist/ink-full.js",
   "types": "ink.d.ts",
