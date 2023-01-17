@@ -124,12 +124,12 @@ var result = EvaluateFunction('my_ink_function', ['arg1', 'arg2'], true);
 
 ## Compiler
 
-### inklecate.js
+### inkjs-compiler.js
 
 ```shell
-$ node inklecate.js -h
+$ node inkjs-compiler.js -h
 
-Usage: inklecate <options> <ink file>
+Usage: inkjs-compiler <options> <ink file>
    -o <filename>:   Output file name
    -c:              Count all visits to knots, stitches and weave points, not
                     just those referenced by TURNS_SINCE and read counts.
@@ -155,21 +155,22 @@ See [Differences with the C# Compiler](docs/compiler-differences.md).
 
 ## Compatibility table
 
-| _inklecate_ version | _inkjs_ version |
-| :-----------------: | :-------------: |
-|    0.3.5 – 0.4.0    |  1.0.0 – 1.1.0  |
-|    0.4.1 – 0.5.0    |  1.1.1 – 1.1.3  |
-|        0.5.1        |      1.2.0      |
-|        0.6.0        |      1.3.0      |
-|        0.6.1        |  1.4.0 – 1.4.1  |
-|        0.6.2        |      1.4.2      |
-|        0.6.3        |      1.4.3      |
-|        0.6.4        |  1.4.4 – 1.4.6  |
-|        0.7.0        |  1.5.0 – 1.5.1  |
-|        0.7.1        |      1.5.2      |
-|    0.7.2 – 0.7.4    |      1.6.0      |
-|    0.8.0 – 0.8.1    |  1.7.1 – 1.7.2  |
-|        0.8.2        |  1.8.0 – 1.9.0  |
-|        0.8.3        | 1.10.0 – 1.10.5 |
-|        0.9.0        |     1.11.0      |
-|        1.0.0        |      2.0.0      |
+| _inklecate_ version | _inkjs_ version | _json_ version |
+| :-----------------: | :-------------: | :------------: |
+|    0.3.5 – 0.4.0    |  1.0.0 – 1.1.0  |       18       |
+|    0.4.1 – 0.5.0    |  1.1.1 – 1.1.3  |                |
+|        0.5.1        |      1.2.0      |                |
+|        0.6.0        |      1.3.0      |                |
+|        0.6.1        |  1.4.0 – 1.4.1  |                |
+|        0.6.2        |      1.4.2      |                |
+|        0.6.3        |      1.4.3      |                |
+|        0.6.4        |  1.4.4 – 1.4.6  |                |
+|        0.7.0        |  1.5.0 – 1.5.1  |                |
+|        0.7.1        |      1.5.2      |                |
+|    0.7.2 – 0.7.4    |      1.6.0      |                |
+|    0.8.0 – 0.8.1    |  1.7.1 – 1.7.2  |                |
+|        0.8.2        |  1.8.0 – 1.9.0  |                |
+|        0.8.3        | 1.10.0 – 1.10.5 |                |
+|        0.9.0        |     1.11.0      |       19       |
+|        1.0.0        |  2.0.0 - 2.1.0  |       20       |
+|        1.1.1        |      2.2.0      |       21       |
